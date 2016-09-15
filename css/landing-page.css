@@ -53,7 +53,10 @@ h6 {
     background: url(../img/emrakul.jpg) no-repeat center center;
     background-size: cover;
 }
-
+.zendikar{
+    background: url(../img/zendikar.jpg) no-repeat center center;
+    background-size: cover;
+}
 .intro-message {
     position: relative;
     padding-top: 20%;
@@ -131,7 +134,7 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../img/lowerbanner.jpg) no-repeat center center;
+    background: url(../img/footer.jpg) no-repeat center center;
     background-size: cover;
 }
 
