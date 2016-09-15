@@ -21,8 +21,16 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
+    <!-- YouTube Video Background -->
+    <link href="css/YTPlayer.css" media="all" rel="stylesheet" type="text/css">
 
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.js"></script>
+    <script type="text/javascript">
+        $(function(){
+          jQuery("#[playerID]").YTPlayer();
+        });
+    </script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -33,7 +41,7 @@
 </head>
 
 <body>
-
+    
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -100,150 +108,159 @@
     <!-- /.intro-header -->
 
     <!-- Page Content -->
+<div class='bgBlack'>
     <div class='container' id='about'>
-        <h1>About Me</h1>
-        <p>At the age of 10 a young man unbeknownst to him what the future had in store, for he would one day become one of the greatest planeswalkers to ever roam the planes. The boy stole away in the helms of the Weatherlight as it traveled to Dominaria to fend off the Phyrexians where he would begin his journey of self discovery. Little did he know that his world which he had known will never be the same. The boy now a man had traveled and battled across many of planes, fending off the fearsome Eldrazi and saving precious Zendikar along side with what he now knows as other planeswalkers. His latest feat was aiding alongside Nahiri to vanquish Kozilek from Innistrad. He now travels to the great planes of Renton where his attempts to join forces with The Wizards of the Coast will be his greatest adventure to date. His name is Brian Le and over the years he has accumulated vast knowledge about the game of Magic: The Gathering and various programming languages.</p>
+        <h1 class='white'>About Me</h1>
+        <p class='white'>At the age of 10 a young man unbeknownst to him what the future had in store, for he would one day become one of the greatest planeswalkers to ever roam the planes. The boy stole away in the helms of the Weatherlight as it traveled to Dominaria to fend off the Phyrexians where he would begin his journey of self discovery. Little did he know that his world which he had known will never be the same. The boy now a man had traveled and battled across many of planes, fending off the fearsome Eldrazi and saving precious Zendikar along side with what he now knows as other planeswalkers. His latest feat was aiding alongside Nahiri to vanquish Kozilek from Innistrad. He now travels to the great planes of Renton where his attempts to join forces with The Wizards of the Coast will be his greatest adventure to date. His name is Brian Le and over the years he has accumulated vast knowledge about the game of Magic: The Gathering and various programming languages.</p>
     </div>
-	<a  name="services"></a>
+</div>
+<!-- <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+  <iframe frameborder="0" height="100%" width="100%" 
+    src="https://youtube.com/embed/VKHva6JkQIc?autoplay=1&controls=0&showinfo=0&autohide=0">
+  </iframe>
+</div> -->
 <div class="content-section-a">
-    <div class='container'>
-        <h2>Check out my deck!</h2>
-        <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="flipper">
-                <div class='front'>
-                    <img src="./img/magicback.jpg" class='img-responsive'> 
-                </div>
-                <div class="back">
-                    <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
-                    <div class='relative'>
-                        <img src="./img/badge-css-3-128.png" alt="CSS">
-                        <h2>CSS</h2>
+    <div id="bgndVideo" class="player" 
+         data-property="{videoURL:'http://youtu.be/BsekcY04xvQ',containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}">
+        <div class='container'>
+            <h2>Check out my deck!</h2>
+            <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="flipper">
+                    <div class='front'>
+                        <img src="./img/magicback.jpg" class='img-responsive'> 
+                    </div>
+                    <div class="back">
+                        <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
+                        <div class='relative'>
+                            <img src="./img/badge-css-3-128.png" alt="CSS" class='image'>
+                            <h2 class='text'>CSS</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-         <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="flipper">
-                <div class='front'>
-                    <img src="./img/magicback.jpg" class='img-responsive'> 
-                </div>
-                <div class="back">
-                    <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
-                    <div class='relative'>
-                        <img src="./img/HTML5.png" alt="HTML">
-                        <h2>HTML</h2>
+             <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="flipper">
+                    <div class='front'>
+                        <img src="./img/magicback.jpg" class='img-responsive'> 
+                    </div>
+                    <div class="back">
+                        <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
+                        <div class='relative'>
+                            <img src="./img/HTML5.png" alt="HTML" class='image'>
+                            <h2 class='text'>HTML</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-         <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="flipper">
-                <div class='front'>
-                    <img src="./img/magicback.jpg" class='img-responsive'> 
-                </div>
-                <div class="back">
-                    <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
-                    <div class='relative'>
-                        <img src="./img/mongodb.png" alt="MONGODB">
-                        <h2>MongoDB</h2>
+             <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="flipper">
+                    <div class='front'>
+                        <img src="./img/magicback.jpg" class='img-responsive'> 
+                    </div>
+                    <div class="back">
+                        <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
+                        <div class='relative'>
+                            <img src="./img/mongodb.png" alt="MONGODB" class='image'>
+                            <h2 class='text'>MongoDB</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-         <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="flipper">
-                <div class='front'>
-                    <img src="./img/magicback.jpg" class='img-responsive'> 
-                </div>
-                <div class="back">
-                    <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
-                    <div class='relative'>
-                        <img src="./img/angularjs.png" alt="Angular">
-                        <h2>AngularJs</h2>
+             <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="flipper">
+                    <div class='front'>
+                        <img src="./img/magicback.jpg" class='img-responsive'> 
+                    </div>
+                    <div class="back">
+                        <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
+                        <div class='relative'>
+                            <img src="./img/angularjs.png" alt="Angular" class='image'>
+                            <h2 class='text'>AngularJs</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-         <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="flipper">
-                <div class='front'>
-                    <img src="./img/magicback.jpg" class='img-responsive'> 
-                </div>
-                <div class="back">
-                    <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
-                    <div class='relative'>
-                        <img src="./img/nodejs-128.png" alt="Node">
-                        <h2>Node.Js</h2>
+             <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="flipper">
+                    <div class='front'>
+                        <img src="./img/magicback.jpg" class='img-responsive'> 
+                    </div>
+                    <div class="back">
+                        <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
+                        <div class='relative'>
+                            <img src="./img/nodejs-128.png" alt="Node" class='image'>
+                            <h2 class='text'>Node.Js</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="flipper">
-                <div class='front'>
-                    <img src="./img/magicback.jpg" class='img-responsive'> 
-                </div>
-                <div class="back">
-                    <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
-                    <div class='relative'>
-                        <img src="./img/JQuery.png" alt="JQuery">
-                        <h2>jQuery</h2>
+            <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="flipper">
+                    <div class='front'>
+                        <img src="./img/magicback.jpg" class='img-responsive'> 
+                    </div>
+                    <div class="back">
+                        <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
+                        <div class='relative'>
+                            <img src="./img/JQuery.png" alt="JQuery" class='image'>
+                            <h2 class='text'>jQuery</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-         <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="flipper">
-                <div class='front'>
-                    <img src="./img/magicback.jpg" class='img-responsive'> 
-                </div>
-                <div class="back">
-                    <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
-                    <div class='relative'>
-                        <img src="./img/python.png" alt="Python">
-                        <h2>Python</h2>
+             <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="flipper">
+                    <div class='front'>
+                        <img src="./img/magicback.jpg" class='img-responsive'> 
+                    </div>
+                    <div class="back">
+                        <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
+                        <div class='relative'>
+                            <img src="./img/python.png" alt="Python" class='image'>
+                            <h2 class='text'>Python</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-         <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="flipper">
-                <div class='front'>
-                    <img src="./img/magicback.jpg" class='img-responsive'> 
-                </div>
-                <div class="back">
-                    <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
-                    <div class='relative'>
-                        <img src="./img/django.png" alt="Django">
-                        <h2>Django</h2>
+             <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="flipper">
+                    <div class='front'>
+                        <img src="./img/magicback.jpg" class='img-responsive'> 
+                    </div>
+                    <div class="back">
+                        <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
+                        <div class='relative'>
+                            <img src="./img/django.png" alt="Django" class='image'>
+                            <h2 class='text'>Django</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-         <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="flipper">
-                <div class='front'>
-                    <img src="./img/magicback.jpg" class='img-responsive'> 
-                </div>
-                <div class="back">
-                    <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
-                    <div class='relative'>
-                        <img src="./img/ruby.png" alt="Ruby" height='128px'>
-                        <h2>Ruby</h2>
+             <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="flipper">
+                    <div class='front'>
+                        <img src="./img/magicback.jpg" class='img-responsive'> 
+                    </div>
+                    <div class="back">
+                        <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
+                        <div class='relative'>
+                            <img src="./img/ruby.png" alt="Ruby" height='128px'  class='image'>
+                            <h2 class='text'>Ruby</h2>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-         <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
-            <div class="flipper">
-                <div class='front'>
-                    <img src="./img/magicback.jpg" class='img-responsive'> 
-                </div>
-                <div class="back">
-                    <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
-                    <div class='relative'>
-                        <img src="./img/rails.png" alt="Rails">
-                        <h2>Rails</h2>
+             <div class="col-sm-2 flip-container text-center" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="flipper">
+                    <div class='front'>
+                        <img src="./img/magicback.jpg" class='img-responsive'> 
+                    </div>
+                    <div class="back">
+                        <img src="./img/magicfront.jpg" class='img-responsive' style='position: absolute;'>
+                        <div class='relative'>
+                            <img src="./img/rails.png" alt="Rails" class='image'>
+                            <h2 class='text'>Rails</h2>
+                        </div>
                     </div>
                 </div>
             </div>

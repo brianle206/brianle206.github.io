@@ -20,7 +20,22 @@ h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
-
+.bgBlack{
+    background-color: black;
+}
+.white{
+    color:white;
+}
+.navbar-default .navbar-brand {
+    color: white; 
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default {
+    background: rgba(10,10,10,.8);
+    border-color: black;
+}
 .topnav {
     font-size: 14px; 
 }
@@ -35,7 +50,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/backgrounds.jpg) no-repeat center center;
+    background: url(../img/emrakul.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -198,7 +213,7 @@ p.copyright {
 }
 .flip-container, .front, .back {
     width: 220px;
-    height: 220px;
+    height: 312px;
 }
 .flipper {
     -webkit-transition: 0.8s;
@@ -246,3 +261,14 @@ text-align:center;
 .relative{
     position: relative;
 }
+.image{
+    top: 40px;
+    position: relative;
+}
+.text{
+    bottom: -50px;
+    position: relative;
+}
+
+
+
