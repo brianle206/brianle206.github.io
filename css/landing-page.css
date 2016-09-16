@@ -22,6 +22,7 @@ h6 {
 }
 .bgBlack{
     background-color: black;
+    padding: 40px 0px;
 }
 .white{
     color:white;
@@ -56,6 +57,7 @@ h6 {
 .zendikar{
     background: url(../img/zendikar.jpg) no-repeat center center;
     background-size: cover;
+    padding: 40px 0px;
 }
 .intro-message {
     position: relative;
@@ -111,7 +113,6 @@ h6 {
 }
 
 .content-section-a {
-    padding: 50px 0;
     background-color: #f8f8f8;
 }
 
