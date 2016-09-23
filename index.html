@@ -20,7 +20,16 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <!-- Add jQuery library -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+    
 
+    <!-- Add fancyBox main JS and CSS files -->
+    <script type="text/javascript" src="./js/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+    
     <!-- YouTube Video Background -->
     <link href="css/YTPlayer.css" media="all" rel="stylesheet" type="text/css">
 
@@ -29,6 +38,22 @@
     <script type="text/javascript">
         $(function(){
           jQuery("#bgndVideo").YTPlayer();
+
+        });
+        $(document).ready(function() {
+            $(".fancybox-thumb").fancybox({
+                prevEffect  : 'none',
+                nextEffect  : 'none',
+                helpers : {
+                    title   : {
+                        type: 'outside'
+                    },
+                    thumbs  : {
+                        width   : 50,
+                        height  : 50
+                    }
+                }
+            });
         });
     </script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -267,23 +292,7 @@
     </div>
 </div>
 
-<!-- <div class="container">
-    <div class="row">
-        <div class="col-lg-5 col-sm-6">
-            <hr class="section-heading-spacer">
-            <div class="clearfix"></div>
-            <h2 class="section-heading">Things I know:<br>Something to be determined</h2>
-            <p class="lead">Motivated and quick to learn developer in the works. Skills in Python, Django, Ruby, Ruby on Rails, Javascript, MongoDB, AngularJS, ExpressJS, Node.JS, MySQL, and a little bit of C#</p>
-        </div>
-        <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-            <img class="img-responsive" src="img/lang.png" alt="">
-        </div>
-    </div>
-</div> -->
-        <!-- /.container -->
 
- 
-    <!-- /.content-section-a -->
 
     <div class="content-section-b">
 
@@ -297,6 +306,19 @@
                     <p class="lead">Here are some of the following projects that I have recently worked on</p>
                 </div>
                 <div class='col-sm-3'>
+                    <a class="fancybox-button" rel="fancybox-button" href="./img/ol2.jpg" title="Making a summer # 3 :) ((Nikon woman))">
+                        <img src="./img/ol2.jpg" class='img-responsive' alt='Online Lending'>
+                    </a>
+                    <a class="fancybox-button" rel="fancybox-button" href="http://farm1.staticflickr.com/313/19831416459_5ddd26103e_b.jpg" title="Sgwd Ddwli Uchaf, Brecon Waterfalls (technodean2000)">
+                        <img src="http://farm1.staticflickr.com/313/19831416459_5ddd26103e_m.jpg" alt="" />
+                    </a>
+                    <a class="fancybox-button" rel="fancybox-button" href="http://farm6.staticflickr.com/5444/17679973232_568353a624_b.jpg" title="Golden Manarola (Sanjeev Deo)">
+                        <img src="http://farm6.staticflickr.com/5444/17679973232_568353a624_m.jpg" alt="" />
+                    </a>
+                    <a class="fancybox-button" rel="fancybox-button" href="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_b.jpg" title="Codirosso spazzacamino (Massimo Greco _Foligno)">
+                        <img src="http://farm8.staticflickr.com/7367/16426879675_e32ac817a8_m.jpg" alt="" />
+                    </a>
+                    <img src="./img/ol2.jpg" class='img-responsive' alt='Online Lending'>
                     <h2>Online Lending</h2>
                     <p>This project was built fully on Ruby on Rails for a 3 hour hackathon</p>
                     <p>Technologies:<br>
